@@ -1,0 +1,107 @@
+.fList {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.fListItem {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.fListImg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.judul {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: start;
+  margin-top: 8px;
+}
+
+@media (max-width: 425px) {
+  .fList {
+    width: 100%;
+    max-width: 325px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .fListItem {
+    flex-basis: 50%;
+    max-width: 50%;
+    height: 250px;
+  }
+
+  .judul {
+    font-size: 18px;
+  }
+
+  .fListImg {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fList {
+    flex-wrap: wrap;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .fListItem {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .fListImg {
+    height: 200px;
+  }
+  .judul {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .fList {
+    flex-wrap: wrap;
+  }
+  .fListItem {
+    width: calc(50% - 8px);
+    margin-bottom: 16px;
+  }
+  .fListImg {
+    height: 250px;
+  }
+  .judul {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fList {
+    justify-content: space-between;
+  }
+  .fListItem {
+    width: calc(25% - 8px);
+    margin-bottom: 0;
+  }
+  .fListImg {
+    height: 350px;
+  }
+  .judul {
+    font-size: 32px;
+  }
+}
